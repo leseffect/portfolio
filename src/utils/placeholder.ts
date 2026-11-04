@@ -1,10 +1,10 @@
 const PLACEHOLDER_GRADIENTS = [
-  ['#6366f1', '#a855f7'],
-  ['#0ea5e9', '#22d3ee'],
-  ['#f97316', '#f43f5e'],
-  ['#10b981', '#84cc16'],
-  ['#ec4899', '#8b5cf6'],
-  ['#14b8a6', '#3b82f6'],
+  ['#ff8fab', '#ffb86b'],
+  ['#7cc6fe', '#a78bfa'],
+  ['#5eead4', '#a3e635'],
+  ['#fbbf24', '#fb7185'],
+  ['#c084fc', '#f472b6'],
+  ['#38bdf8', '#34d399'],
 ] as const;
 
 function hashString(value: string): number {

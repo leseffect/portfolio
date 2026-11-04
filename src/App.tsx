@@ -1,19 +1,23 @@
+import { BackgroundBlobs } from './components/BackgroundBlobs';
+import { BouncyTitle } from './components/BouncyTitle';
 import { ProjectGrid } from './components/ProjectGrid';
 import { PROJECTS } from './data/projects';
+
+const SITE_TITLE = "InfluEunseo's Home";
+const SITE_SUBTITLE = '하나씩 만들어온 작은 웹들의 집';
 
 export function App() {
   return (
     <>
+      <BackgroundBlobs />
       <header className="header">
-        <h1 className="header__title">My Websites</h1>
-        <p className="header__subtitle">
-          제가 만든 웹사이트들을 한곳에 모았습니다. 이미지를 클릭하면 해당 사이트로 이동합니다.
-        </p>
+        <BouncyTitle text={SITE_TITLE} />
+        <p className="header__subtitle">{SITE_SUBTITLE}</p>
       </header>
       <main className="main">
         <ProjectGrid projects={PROJECTS} />
       </main>
-      <footer className="footer">© {new Date().getFullYear()} Portfolio</footer>
+      <footer className="footer">© {new Date().getFullYear()} InfluEunseo</footer>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import '@fontsource/jua';
 import { App } from './App';
 import './styles.css';
 

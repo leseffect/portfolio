@@ -12,7 +12,8 @@ export const PROJECTS: Project[] = [
   {
     id: 'nuga-record-helper',
     title: '누가기록 작성 도우미',
-    description: '학생 누가기록 작성을 도와주는 웹 도구입니다.',
+    description: '교사용 수업·관찰 기록 및 생활기록부 AI 요약 도구',
     url: 'https://student-log-taupe.vercel.app/',
+    thumbnail: '/thumbnails/nuga-record-helper.webp',
   },
 ];
