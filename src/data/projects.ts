@@ -10,24 +10,9 @@ import type { Project } from '../types';
  */
 export const PROJECTS: Project[] = [
   {
-    id: 'sample-site-1',
-    title: '예시 사이트 1',
-    description: '여기에 사이트 설명을 적어주세요. 이 항목을 실제 사이트 정보로 교체하면 됩니다.',
-    url: 'https://example.com',
-    tags: ['HTML', 'CSS'],
-  },
-  {
-    id: 'sample-site-2',
-    title: '예시 사이트 2',
-    description: '이미지를 클릭하면 새 탭에서 해당 사이트가 열립니다.',
-    url: 'https://example.org',
-    tags: ['React', 'TypeScript'],
-  },
-  {
-    id: 'sample-site-3',
-    title: '예시 사이트 3',
-    description: '썸네일이 없거나 이미지를 불러오지 못하면 대체 이미지가 표시됩니다.',
-    url: 'https://example.net',
-    tags: ['JavaScript'],
+    id: 'nuga-record-helper',
+    title: '누가기록 작성 도우미',
+    description: '학생 누가기록 작성을 도와주는 웹 도구입니다.',
+    url: 'https://student-iyjd3peh0-leseffects-projects.vercel.app/',
   },
 ];
