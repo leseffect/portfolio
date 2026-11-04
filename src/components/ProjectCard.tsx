@@ -1,6 +1,5 @@
 import type { CSSProperties } from 'react';
 import type { Project } from '../types';
-import { getCardAccent } from '../utils/placeholder';
 import { getDisplayHost, toSafeUrl } from '../utils/url';
 import { ProjectThumbnail } from './ProjectThumbnail';
 
@@ -13,10 +12,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   const safeUrl = toSafeUrl(project.url);
   if (!safeUrl) return null;
 
-  const cardStyle = {
-    '--card-accent': getCardAccent(index),
-    '--card-index': index,
-  } as CSSProperties;
+  const cardStyle = { '--card-index': index } as CSSProperties;
 
   return (
     <li className="card" style={cardStyle}>

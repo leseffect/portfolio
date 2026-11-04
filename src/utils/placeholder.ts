@@ -7,8 +7,6 @@ const PLACEHOLDER_GRADIENTS = [
   ['#38bdf8', '#34d399'],
 ] as const;
 
-const CARD_ACCENTS = ['#ff6b9a', '#ffb020', '#3fc1ff', '#7c5cff', '#2ed3a4', '#ff7a45'] as const;
-
 function hashString(value: string): number {
   let hash = 0;
   for (const char of value) {
@@ -21,11 +19,6 @@ function hashString(value: string): number {
 export function getPlaceholderGradient(seed: string): string {
   const [from, to] = PLACEHOLDER_GRADIENTS[hashString(seed) % PLACEHOLDER_GRADIENTS.length];
   return `linear-gradient(135deg, ${from}, ${to})`;
-}
-
-/** 카드마다 돌아가며 쓰는 포인트 색상 */
-export function getCardAccent(index: number): string {
-  return CARD_ACCENTS[index % CARD_ACCENTS.length];
 }
 
 /** 대체 이미지에 표시할 첫 글자 */
