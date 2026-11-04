@@ -12,8 +12,3 @@ export function toSafeUrl(rawUrl: string): string | null {
     return null;
   }
 }
-
-/** 카드 하단에 보여줄 도메인 (예: example.com) */
-export function getDisplayHost(safeUrl: string): string {
-  return new URL(safeUrl).host.replace(/^www\./, '');
-}

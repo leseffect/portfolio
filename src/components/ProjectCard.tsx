@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import type { Project } from '../types';
-import { getDisplayHost, toSafeUrl } from '../utils/url';
+import { toSafeUrl } from '../utils/url';
 import { ProjectThumbnail } from './ProjectThumbnail';
 
 interface ProjectCardProps {
@@ -39,7 +39,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </ul>
           )}
           <div className="card__footer">
-            <span className="card__host">{getDisplayHost(safeUrl)}</span>
             <span className="card__cta" aria-hidden="true">
               놀러가기 →
             </span>
