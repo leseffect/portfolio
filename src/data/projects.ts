@@ -13,6 +13,6 @@ export const PROJECTS: Project[] = [
     id: 'nuga-record-helper',
     title: '누가기록 작성 도우미',
     description: '학생 누가기록 작성을 도와주는 웹 도구입니다.',
-    url: 'https://student-iyjd3peh0-leseffects-projects.vercel.app/',
+    url: 'https://student-log-taupe.vercel.app/',
   },
 ];
