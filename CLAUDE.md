@@ -30,7 +30,8 @@
 - **플랫폼**: Web Application (반응형 모바일/데스크톱 대응)
 - **언어 및 런타임**: TypeScript / JavaScript (Node.js)
 - **패키지 매니저**: npm / pnpm / yarn (일관된 매니저 유지)
-- *(추후 확정되는 프레임워크/라이브러리는 이곳에 추가 업데이트)*
+- **프레임워크**: Vite + React + TypeScript (패키지 매니저: npm)
+- **사이트 데이터**: `src/data/projects.ts` / 썸네일 이미지: `public/thumbnails/`
 
 ---
 
