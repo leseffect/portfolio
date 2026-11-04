@@ -37,3 +37,6 @@ Thumbs.db
 *.sln
 *.sw?
 
+
+# TypeScript build info
+*.tsbuildinfo
