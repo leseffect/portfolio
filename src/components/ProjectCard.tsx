@@ -1,17 +1,25 @@
+import type { CSSProperties } from 'react';
 import type { Project } from '../types';
+import { getCardAccent } from '../utils/placeholder';
 import { getDisplayHost, toSafeUrl } from '../utils/url';
 import { ProjectThumbnail } from './ProjectThumbnail';
 
 interface ProjectCardProps {
   project: Project;
+  index: number;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, index }: ProjectCardProps) {
   const safeUrl = toSafeUrl(project.url);
   if (!safeUrl) return null;
 
+  const cardStyle = {
+    '--card-accent': getCardAccent(index),
+    '--card-index': index,
+  } as CSSProperties;
+
   return (
-    <li className="card">
+    <li className="card" style={cardStyle}>
       <a
         className="card__link"
         href={safeUrl}
@@ -21,9 +29,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
       >
         <div className="card__media">
           <ProjectThumbnail title={project.title} src={project.thumbnail} />
-          <span className="card__overlay" aria-hidden="true">
-            사이트 방문 ↗
-          </span>
         </div>
         <div className="card__body">
           <h2 className="card__title">{project.title}</h2>
@@ -37,7 +42,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
               ))}
             </ul>
           )}
-          <span className="card__host">{getDisplayHost(safeUrl)}</span>
+          <div className="card__footer">
+            <span className="card__host">{getDisplayHost(safeUrl)}</span>
+            <span className="card__cta" aria-hidden="true">
+              놀러가기 →
+            </span>
+          </div>
         </div>
       </a>
     </li>
