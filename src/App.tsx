@@ -17,9 +17,7 @@ export function App() {
       <main className="main">
         <ProjectGrid projects={PROJECTS} />
       </main>
-      <footer className="footer">
-        © {new Date().getFullYear()} InfluEunseo · made with ♥
-      </footer>
+      <footer className="footer">© {new Date().getFullYear()} InfluEunseo</footer>
     </>
   );
 }

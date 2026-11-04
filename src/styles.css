@@ -6,12 +6,11 @@
   --shadow-color: #2b2140;
   --blob-opacity: 0.55;
   --tag-bg: #fff1c2;
-  --card-border: rgb(43 33 64 / 0.12);
+  --card-border: #2b2140;
   --card-shadow: 0 2px 6px rgb(43 33 64 / 0.06), 0 10px 24px rgb(43 33 64 / 0.08);
   --card-shadow-hover: 0 6px 12px rgb(43 33 64 / 0.08), 0 20px 40px rgb(43 33 64 / 0.14);
   --font-display: 'Jua', system-ui, sans-serif;
   --font-body: system-ui, -apple-system, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
-  --radius: 24px;
   --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --title-1: #ff6b9a;
   --title-2: #ffb020;
@@ -30,7 +29,7 @@
     --shadow-color: #0c0818;
     --blob-opacity: 0.28;
     --tag-bg: #3a2f5c;
-    --card-border: rgb(253 246 255 / 0.12);
+    --card-border: #d9cff0;
     --card-shadow: 0 2px 6px rgb(0 0 0 / 0.25), 0 10px 24px rgb(0 0 0 / 0.3);
     --card-shadow-hover: 0 6px 12px rgb(0 0 0 / 0.3), 0 20px 40px rgb(0 0 0 / 0.45);
     color-scheme: dark;
@@ -207,8 +206,8 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 28px;
 }
 
 .card {
@@ -222,8 +221,7 @@ body {
   flex-direction: column;
   width: 100%;
   background: var(--surface);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius);
+  border: 2.5px solid var(--card-border);
   overflow: hidden;
   color: inherit;
   text-decoration: none;
@@ -266,7 +264,7 @@ body {
   place-items: center;
   color: #fff;
   font-family: var(--font-display);
-  font-size: 4.5rem;
+  font-size: 3.75rem;
   text-shadow: 4px 4px 0 rgb(43 33 64 / 0.35);
 }
 
@@ -279,14 +277,14 @@ body {
   flex-direction: column;
   gap: 10px;
   flex: 1;
-  padding: 18px 20px 20px;
+  padding: 14px 16px 16px;
 }
 
 .card__title {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   line-height: 1.25;
 }
 
